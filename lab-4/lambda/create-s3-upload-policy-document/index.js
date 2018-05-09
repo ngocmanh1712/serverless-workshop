@@ -7,7 +7,7 @@
  * UPLOAD_BUCKET
  * SECRET_ACCESS_KEY
  * ACCESS_KEY_ID
- * UPLOAD_URI - https://s3.amazonaws.com
+ * UPLOAD_URI
  */
 
 'use strict';
@@ -82,7 +82,8 @@ exports.handler = function(event, context, callback){
           signature: signature,
           encoded_policy: encoding,
           access_key: process.env.ACCESS_KEY_ID,
-          upload_url: (process.env.UPLOAD_URI  || 'https://s3.amazonaws.com') + '/' + process.env.UPLOAD_BUCKET,
+          // upload_url: (process.env.UPLOAD_URI  || 'https://s3.amazonaws.com') + '/' + process.env.UPLOAD_BUCKET,
+          upload_url: process.env.UPLOAD_URI  || ('https://s3.amazonaws.com/' + process.env.UPLOAD_BUCKET),
           key: key
         };
         var response = generateResponse(200, body);

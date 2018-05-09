@@ -63,12 +63,14 @@ var videoController = {
         var that = this;
 
         /* PASTE CONFIG HERE */
-        // var config = {
-        //   apiKey: "",
-        //   authDomain: "",
-        //   databaseURL: "",
-        //   storageBucket: "",
-        // };
+        var config = {
+            apiKey: "AIzaSyCpkDr2D8rb_K_gUejhAakEQ45S54jC3Dg",
+            authDomain: "mml-video-sharing-c7753.firebaseapp.com",
+            databaseURL: "https://mml-video-sharing-c7753.firebaseio.com",
+            projectId: "mml-video-sharing-c7753",
+            storageBucket: "mml-video-sharing-c7753.appspot.com",
+            messagingSenderId: "388677878842"
+        };
 
         firebase.initializeApp(config);
 

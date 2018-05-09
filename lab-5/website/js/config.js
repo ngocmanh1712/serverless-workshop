@@ -1,8 +1,8 @@
 var configConstants = {
     auth0: {
-        domain: 'YOUR_AUTH0_DOMAIN_HERE',
-        clientId: 'YOUR_AUTH0_CLIENT_ID_HERE'
+        domain: 'manhmaluc.auth0.com',
+        clientId: '2WvXLs1edvd4eOhS-qPyW8JGkPmhqoXv'
     },
-    apiBaseUrl: 'YOUR_API_BASE_URL_HERE_NO_TRAILING_SLASH',
+    apiBaseUrl: 'https://6oek7af332.execute-api.ap-northeast-1.amazonaws.com/dev',
     firebaseUrl: 'YOUR_FIRE_BASE_URL_HERE_NO_TRAILING_SLASH'
 };
